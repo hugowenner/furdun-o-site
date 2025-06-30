@@ -10,33 +10,32 @@ const instagramPosts = [
   { img: '/assets/post4.jpeg', url: 'https://www.instagram.com/p/C7NG3Iuvard/?igsh=aW1hejg0dDkwYTBx' },
   { img: '/assets/post5.jpeg', url: 'https://www.instagram.com/p/C61D7VxP2nK/?igsh=MXh5dmxwZGNmOXg3aQ==' },
   { img: '/assets/post6.jpeg', url: 'https://www.instagram.com/p/C6ys1ECthhY/?igsh=dnpsNXJpMmJyNng0' },
-  ];
+];
 
 export default function InstagramSection() {
   return (
-    // ID ADICIONADO AQUI
     <section id="instagram" className="py-20 bg-brown-100/80">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-4 text-brown-800">Siga nosso Furdunço</h2>
         <p className="mb-12 text-brown-600 max-w-2xl mx-auto">
           Acompanhe nossas novidades, os bastidores da loja e os produtos incríveis dos nossos parceiros!
         </p>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
           {instagramPosts.map((post, index) => (
             <a key={index} href={post.url} target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-lg shadow-lg">
-              <img 
-                src={post.img} 
-                alt={`Post do Instagram ${index + 1}`} 
+              <img
+                src={post.img}
+                alt={`Post do Instagram ${index + 1}`}
                 className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
               />
             </a>
           ))}
         </div>
 
-        <a 
+        <a
           href="https://www.instagram.com/furdunco.colaborativa?igsh=emxlOG1uamtqaHI5"
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-brown-500 to-brown-600 text-white font-bold py-4 px-12 rounded-full text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center mx-auto"
         >

@@ -120,31 +120,29 @@ export const ctaData = {
 
 export const footerData = {
   logoText: "Furdunço",
-  description: "Siga nosso Furdunço\nAcompanhe nossas novidades, os bastidores da loja e os produtos incríveis dos nossos parceiros!",
+  description: "Um espaço colaborativo que celebra a criatividade local e a economia consciente, conectando talentos e consumidores em Belo Horizonte.", // Exemplo de descrição mais elaborada
   socialButton: {
+    icon: "Instagram",
     text: "Ver no Instagram",
-    icon: "Instagram"
+    url: "https://www.instagram.com/furdunco.colaborativa?igsh=emxlOG1uamtqaHI5" // Link real do Instagram
   },
-  address: "Av. Olegário Maciel, 742 - Loja 2010 - Centro, Belo Horizonte - MG, 30180-110",
   navigation: [
-    { name: "Início", href: "#home" },
-    { name: "Quem Somos", href: "#quem-somos" },
-    { name: "Serviços", href: "#servicos" },
-    { name: "Alugue um Nicho", href: "#nichos" },
-    { name: "Fazer Parte", href: "#fazer-parte" },
+    { href: "#home", name: "Início" },
+    { href: "#about", name: "Quem Somos" },
+    { href: "#services", name: "Serviços" },
+    { href: "#nichos", name: "Alugue um Nicho" },
+    { href: "#participate", name: "Fazer Parte" }, // Adicione o href correto para "Fazer Parte"
   ],
   support: [
-    { name: "Central de Ajuda", href: "#" },
-    { name: "Contato", href: "#" },
-    { name: "Termos de Uso", href: "#" },
-    { name: "Privacidade", href: "#" },
+    { href: "#help-center", name: "Central de Ajuda" }, // Adicione o href correto
+    { href: "#terms", name: "Termos de Uso" }, // Adicione o href correto
+    { href: "#privacy", name: "Privacidade" }, // Adicione o href correto
   ],
   contact: {
-    social: [
-      { icon: "f", href: "#" },
-      { icon: "@", href: "#" },
-      { icon: "in", href: "#" }
-    ]
+    email: "contato@furdunco.com.br", // Sugestão de e-mail
+    phone: "(31) 9999-9999",       // Sugestão de telefone
+    address: "Av. Olegário Maciel, 742 - Loja 2010 - Centro, Belo Horizonte - MG, 30180-110",
+    social: [] // Manter vazio para não exibir ícones sociais no contato do rodapé
   },
   copyright: "© 2025 Furdunço Loja Colaborativa. Todos os direitos reservados."
 };
