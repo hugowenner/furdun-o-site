@@ -1,7 +1,7 @@
 // src/sections/HeroSection.js
 
 import React from 'react';
-import { ChevronDown, ShoppingCart, Users, Heart, Leaf, ArrowRight } from 'lucide-react';
+import { ChevronDown, ShoppingCart, Users, Heart, Leaf, ArrowRight } from 'lucide-react'; // Certifique-se de que todas essas importações são usadas ou remova as desnecessárias
 
 const iconMap = {
   ShoppingCart: ShoppingCart,
@@ -22,6 +22,9 @@ export default function HeroSection({ data, isVisible }) {
             alt="Logo Furdunço"
             className="mb-6 mx-auto h-24 md:h-32 w-auto" // Adicione margem inferior, centralize e ajuste o tamanho
           />
+
+         
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-brown-700 via-brown-600 to-brown-800 bg-clip-text text-transparent leading-tight font-slab">
             {data.mainTitle}<br />
             <span className="text-3xl md:text-4xl">
